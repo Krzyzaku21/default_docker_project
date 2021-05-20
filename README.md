@@ -10,7 +10,7 @@ default_docker_project
 7. debugg_in_vscode\
 -- local\
 ## Containers:
-default_docker_project\
+default_docker_project
 ## Ports:
 -8000\
 -8100
