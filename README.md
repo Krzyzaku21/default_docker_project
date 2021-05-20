@@ -11,7 +11,7 @@ default_docker_project
 -- local\
 ## Containers:
 default_docker_project\
-ports \
+## Ports:
 -8000\
 -8100
 ## Images:
