@@ -136,11 +136,8 @@ dmypy.json
 
 # Cython debug symbols
 cython_debug/
-static
 staticfiles
-media
 commands.txt
-static
 .vscode
 vscode
 logs
