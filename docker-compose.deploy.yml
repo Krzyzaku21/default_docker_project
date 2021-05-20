@@ -1,0 +1,28 @@
+version: "3.9"
+
+services:
+    app:
+        build:
+            context: .
+        env_file:
+            - .env
+        volumes:
+            - staticfiles:/app/staticfiles
+        environment:
+            - ALLOWED_HOSTS=django,127.0.0.1,localhost
+
+    nginx:
+        build:
+            context: ./nginx
+        volumes:
+            - staticfiles:/nginx/default_docker_project/app/staticfiles
+            - ./nginx/logs:/var/log/nginx
+            - ./app/media/:/nginx/default_docker_project/app/media
+        ports:
+            - 8100:8100
+            # -80:80
+            # - 443:433
+        depends_on:
+            - app
+volumes:
+    staticfiles:
