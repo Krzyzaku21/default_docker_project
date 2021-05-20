@@ -138,6 +138,3 @@ dmypy.json
 cython_debug/
 staticfiles
 commands.txt
-.vscode
-vscode
-logs
